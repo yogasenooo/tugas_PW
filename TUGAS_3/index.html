@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulir kontak dan saran mahasiswa">
+    <title>Kontak dan Saran | Portal Mahasiswa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Kontak dan Saran</h1>
+        <p>Silakan hubungi saya melalui formulir berikut.</p>
+    </header>
+
+    <!-- Navigasi -->
+    <nav aria-label="Navigasi utama">
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="index.html#profil">Profil</a></li>
+            <li><a href="index.html#portofolio">Portofolio</a></li>
+            <li><a href="kontak.html" aria-current="page">Kontak dan Saran</a></li>
+        </ul>
+    </nav>
+
+    <!-- Konten Utama -->
+    <main>
+
+        <section>
+            <h2>Formulir Kontak</h2>
+            <p>
+                Isi formulir berikut dengan data yang benar
+                untuk mengirimkan pesan atau saran.
+            </p>
+
+            <form action="#" method="get">
+
+                <fieldset>
+                    <legend>Identitas Pengirim</legend>
+
+                    <p>
+                        <label for="nama">Nama Lengkap:</label>
+                        <input
+                            type="text"
+                            id="nama"
+                            name="nama"
+                            placeholder="Masukkan nama lengkap"
+                            minlength="3"
+                            maxlength="50"
+                            required>
+                    </p>
+
+                    <p>
+                        <label for="email">Alamat Email:</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="nama@email.com"
+                            required>
+                    </p>
+
+                    <p>
+                        <label for="telepon">Nomor Telepon:</label>
+                        <input
+                            type="tel"
+                            id="telepon"
+                            name="telepon"
+                            placeholder="081234567890"
+                            pattern="[0-9]{10,13}"
+                            title="Masukkan 10 sampai 13 digit angka"
+                            required>
+                    </p>
+
+                    <p>
+                        <label for="tanggal">Tanggal Lahir:</label>
+                        <input
+                            type="date"
+                            id="tanggal"
+                            name="tanggal"
+                            max="2026-12-31"
+                            required>
+                    </p>
+
+                    <p>
+                        <label for="umur">Umur:</label>
+                        <input
+                            type="number"
+                            id="umur"
+                            name="umur"
+                            min="15"
+                            max="100"
+                            step="1"
+                            placeholder="Masukkan umur"
+                            required>
+                    </p>
+
+                    <p>
+                        <label for="website">Website (opsional):</label>
+                        <input
+                            type="url"
+                            id="website"
+                            name="website"
+                            placeholder="https://contoh.com">
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Pesan dan Saran</legend>
+
+                    <p>
+                        <label for="kategori">Kategori Pesan:</label>
+                        <select
+                            id="kategori"
+                            name="kategori"
+                            required>
+                            <option value="">-- Pilih Kategori --</option>
+                            <option value="pertanyaan">Pertanyaan</option>
+                            <option value="saran">Saran</option>
+                            <option value="kritik">Kritik</option>
+                            <option value="kerja-sama">Kerja Sama</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="pesan">Isi Pesan:</label>
+                        <textarea
+                            id="pesan"
+                            name="pesan"
+                            rows="6"
+                            minlength="10"
+                            maxlength="500"
+                            placeholder="Tuliskan pesan atau saran Anda..."
+                            required></textarea>
+                    </p>
+
+                    <p>
+                        <input
+                            type="checkbox"
+                            id="persetujuan"
+                            name="persetujuan"
+                            value="setuju"
+                            required>
+                        <label for="persetujuan">
+                            Saya menyetujui pengiriman data ini.
+                        </label>
+                    </p>
+                </fieldset>
+
+                <button type="submit">Kirim Pesan</button>
+                <button type="reset">Reset Formulir</button>
+
+            </form>
+        </section>
+
+        <aside>
+            <h2>Informasi Kontak</h2>
+            <p>Email: mahasiswa@email.com</p>
+            <p>Telepon: 081234567890</p>
+            <p>Lokasi: Indonesia</p>
+        </aside>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Nama Mahasiswa.</p>
+        <p>Terima kasih telah mengunjungi portal saya.</p>
+        <p><a href="index.html">Kembali ke Beranda</a></p>
+    </footer>
+
+</body>
+</html>

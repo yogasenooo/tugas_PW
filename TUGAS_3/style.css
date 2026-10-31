@@ -1,0 +1,160 @@
+
+/* Pengaturan dasar */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #173b68;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+/* Navigasi */
+nav {
+    background-color: #24558b;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffdd57;
+}
+
+/* Konten utama */
+main {
+    max-width: 1000px;
+    margin: 25px auto;
+    padding: 20px;
+}
+
+section,
+article,
+aside {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #173b68;
+}
+
+article {
+    border-left: 4px solid #24558b;
+}
+
+figure {
+    margin: 15px 0;
+}
+
+figure img {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Formulir */
+form {
+    margin-top: 20px;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: bold;
+    color: #173b68;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input:not([type="checkbox"]),
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font: inherit;
+}
+
+input[type="checkbox"] {
+    width: auto;
+}
+
+button {
+    background-color: #24558b;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #173b68;
+}
+
+/* Footer */
+footer {
+    background-color: #173b68;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: #ffdd57;
+}
+
+/* Tampilan perangkat kecil */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    header {
+        padding: 20px 10px;
+    }
+}
